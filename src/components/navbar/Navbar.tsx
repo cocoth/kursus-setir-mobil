@@ -51,31 +51,31 @@ const Navbar = () => {
                     </ul>
                 </section>
                 <section className='block sm:hidden'>
-                    <Sheet  >
+                    <Sheet>
                         <SheetTrigger>
-                            <FaBars />
+                            <FaBars className='text-xl' />
                         </SheetTrigger>
                         <SheetContent side={'right'} >
                             <SheetHeader>
                                 <SheetDescription className='mt-5'>
                                     <ul className={`flex flex-col space-y-4 `}>
                                         <li>
-                                            <Link href='#home' className='hover:underline'>
+                                            <Link href='/#home' className='hover:underline'>
                                                 Home
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href='#about' className='hover:underline'>
+                                            <Link href='/#about' className='hover:underline'>
                                                 About
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href='#service' className='hover:underline'>
+                                            <Link href='/#service' className='hover:underline'>
                                                 Services
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href='#contact' className='hover:underline'>
+                                            <Link href='/contact' className='hover:underline'>
                                                 Contact
                                             </Link>
                                         </li>

@@ -91,7 +91,7 @@ export default function Home() {
       </section>
       <div className="px-3">
         <section className="my-1 grid">
-          <h1 className="text-center text-3xl font-semibold">Frequently Asked Questions</h1>
+          <h1 className="text-center text-2xl font-semibold my-2">Frequently Asked Questions</h1>
           <Card className="p-3 text-sm sm:text-lg md:text-xl w-full">
             <details className="transition-all transform ease-linear duration-700">
               <summary className="text-xl font-semibold cursor-pointer">Bagaimana Cara Mendaftar?</summary>
