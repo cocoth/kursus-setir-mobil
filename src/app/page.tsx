@@ -1,112 +1,124 @@
+import Navbar from "@/components/navbar/Navbar";
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <main>
+      <Navbar />
+      <div className="min-h-screen">
+        <section className="relative flex flex-col pt-12" id="home">
+          <Image
+            src="/img/car-landing-2.jpg"
+            alt="Logo"
+            width={1280}
+            height={720}
+            className="relative h-[50vh] w-full object-fill"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50">
+            <section className="h-full w-full flex justify-center items-center">
+              <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-semibold text-white">
+                Maju Jaya Lancar
+              </h1>
+            </section>
+          </div>
+        </section>
+        <section className="pt-10 py-2 px-3 flex flex-col justify-center items-center" id="about">
+          <div className="text-center">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">About Us</h1>
+            <Card className="p-3 w-full">
+              <p className="text-sm sm:text-lg md:text-2xl">
+                Selamat datang di <span className="font-semibold">Maju Jaya Lancar</span>, ahli kursus mengemudi dengan fokus pada keamanan dan kenyamanan. Kami mengajarkan teknik Defensive Driving untuk memastikan Anda berkendara dengan risiko minimal. Instruktur berpengalaman kami akan membimbing Anda menjadi pengemudi yang percaya diri dan bertanggung jawab. Bergabunglah dengan kami untuk pengalaman belajar mengemudi yang profesional dan menyenangkan.
+              </p>
+            </Card>
+          </div>
+        </section>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <section className="grid md:grid-flow-col px-3 py-3 pt-10 gap-3 justify-center bg-slate-900/70" id="service">
+        <Card className="p-3 shadow-lg hover:scale-[1.03] hover:shadow-blue-800 ease-in-out duration-700">
+          <div className="mx-5">
+            <h2 className="font-semibold text-center text-2xl sm:text-3xl md:text-4xl">Kurikulum</h2>
+            <hr className="my-2" />
+            <ul className="list-disc">
+              <li>Pengenalan Transmisi manual dan automatic/triptonic</li>
+              <li>Persiapan awal berkendara</li>
+              <li>Jalan lurus, berbelok dan menikung</li>
+              <li>Belajar di jalan berlawanan ( dua arah )</li>
+              <li>Belajar di jalanan sempit (melatih dimensi kendaraan)</li>
+              <li>Belajar tanjakan dan turunan</li>
+              <li>Belajar parkir Seri dan Parallel</li>
+              <li>Belajar timing (ketepatan)</li>
+              <li>Belajar controlling (memahami lingkungan)</li>
+            </ul>
+          </div>
+        </Card>
+        <Card className="p-3 shadow-lg hover:scale-[1.03] hover:shadow-blue-800 ease-in-out duration-700">
+          <div className="mx-5">
+            <h2 className="font-semibold text-center text-2xl sm:text-3xl md:text-4xl">Fasilitas</h2>
+            <hr className="my-2" />
+            <ul className="list-disc">
+              <li>Simulasi Ujian Nasional</li>
+              <li>Simulasi Ujian Praktik</li>
+              <li>Simulasi Ujian Teori</li>
+              <li>Simulasi Ujian SIM</li>
+              <li>Simulasi Ujian SIM Internasional</li>
+              <li>Simulasi Ujian SIM A</li>
+              <li>Simulasi Ujian SIM C</li>
+              <li>Simulasi Ujian SIM B1</li>
+              <li>Simulasi Ujian SIM B2</li>
+              <li>Simulasi Ujian SIM B2 Umum dan Khusus</li>
+            </ul>
+          </div>
+        </Card>
+        <Card className="p-3 shadow-lg hover:scale-[1.03] hover:shadow-blue-800 ease-in-out duration-700">
+          <div className="mx-5">
+            <h2 className="font-semibold text-center text-2xl sm:text-3xl md:text-4xl">Harga</h2>
+            <hr className="my-2" />
+            <ul className="list-disc">
+              <li>Biaya Kursus Rp. 1.500.000,-</li>
+              <li>Biaya Ujian Praktik Rp. 300.000,-</li>
+              <li>Biaya Ujian Teori Rp. 200.000,-</li>
+              <li>Biaya Ujian SIM Rp. 200.000,-</li>
+              <li>Biaya Ujian SIM Internasional Rp. 300.000,-</li>
+              <li>Biaya Ujian SIM A Rp. 300.000,-</li>
+              <li>Biaya Ujian SIM C Rp. 300.000,-</li>
+              <li>Biaya Ujian SIM B1 Rp. 300.000,-</li>
+              <li>Biaya Ujian SIM B2 Rp. 300.000,-</li>
+              <li>Biaya Ujian SIM B2 Umum dan Khusus Rp. 300.000,-</li>
+            </ul>
+          </div>
+        </Card>
+      </section>
+      <div className="px-3">
+        <section className="my-1 grid">
+          <h1 className="text-center text-3xl font-semibold">Frequently Asked Questions</h1>
+          <Card className="p-3 text-sm sm:text-lg md:text-xl w-full">
+            <details className="transition-all transform ease-linear duration-700">
+              <summary className="text-xl font-semibold cursor-pointer">Bagaimana Cara Mendaftar?</summary>
+              <p>Untuk mendaftar kursus, Anda bisa langsung datang ke kantor kami di Jalan Dokter Cipto, Semarang timur. Atau Anda bisa menghubungi kami melalui telepon atau email. Kami akan memberikan informasi lebih lanjut mengenai kursus dan jadwal yang tersedia.</p>
+            </details>
+            <details className="transition-all transform ease-linear duration-700">
+              <summary className="text-xl font-semibold cursor-pointer">Apa Saja Syarat Pendaftaran?</summary>
+              <p>Syarat pendaftaran kursus kami adalah minimal berusia 17 tahun dan memiliki KTP. Untuk ujian SIM, peserta harus memiliki SIM C sementara untuk ujian SIM Internasional, peserta harus memiliki SIM A.</p>
+            </details>
+            <details className="transition-all transform ease-linear duration-700">
+              <summary className="text-xl font-semibold cursor-pointer">Apakah Ada Diskon Khusus?</summary>
+              <p>Kami memberikan diskon khusus untuk pendaftaran lebih dari satu orang. Anda juga bisa mendapatkan diskon jika Anda mendaftar lebih dari satu kursus.</p>
+            </details>
+            <details className="transition-all transform ease-linear duration-700">
+              <summary className="text-xl font-semibold cursor-pointer">Apakah Ada Program Khusus Untuk Pelajar?</summary>
+              <p>Kami memiliki program khusus untuk pelajar yang ingin mengikuti kursus mengemudi. Program ini memberikan diskon khusus untuk pelajar yang mendaftar kursus bersama teman-temannya.</p>
+            </details>
+            <details className="transition-all transform ease-linear duration-700">
+              <summary className="text-xl font-semibold cursor-pointer">Apakah Ada Program Khusus Untuk Wanita?</summary>
+              <p>Kami memiliki program khusus untuk wanita yang ingin belajar mengemudi. Program ini memberikan kelas khusus untuk wanita dengan instruktur wanita.</p>
+            </details>
+            <details className="transition-all transform ease-linear duration-700">
+              <summary className="text-xl font-semibold cursor-pointer">Apakah Ada Program Khusus Untuk Lansia?</summary>
+              <p>Kami memiliki program khusus untuk lansia yang ingin belajar mengemudi. Program ini memberikan kelas khusus untuk lansia dengan instruktur berpengalaman.</p>
+            </details>
+          </Card>
+        </section>
       </div>
     </main>
   );
